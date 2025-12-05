@@ -3,9 +3,10 @@ import React from "react";
 import ChatHeader from "./chat/ChatHeader";
 
 const ChatWidget = () => {
+  const onClose = () => {};
   return (
     <div>
-      <ChatHeader />
+      <ChatHeader onClose={onClose} />
     </div>
   );
 };
