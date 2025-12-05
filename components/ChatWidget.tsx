@@ -1,8 +1,13 @@
 "use client";
 import React from "react";
+import ChatHeader from "./chat/ChatHeader";
 
 const ChatWidget = () => {
-  return <div>ChatWidget</div>;
+  return (
+    <div>
+      <ChatHeader />
+    </div>
+  );
 };
 
 export default ChatWidget;
