@@ -1,12 +1,18 @@
 "use client";
 import React from "react";
 import ChatHeader from "./chat/ChatHeader";
+import ChatMessages from "./chat/ChatMessages";
+import { Message } from "./chat/types";
 
 const ChatWidget = () => {
   const onClose = () => {};
+  const messages: Message[] = [
+    { id: 1, text: "how are you?", sender: "user", type: "text" }, //an example
+  ];
   return (
     <div>
       <ChatHeader onClose={onClose} />
+      <ChatMessages messages={messages} />
     </div>
   );
 };
