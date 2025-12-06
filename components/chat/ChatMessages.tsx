@@ -36,12 +36,22 @@ const ChatMessages = ({ messages }: { messages: Message[] }) => {
             </div>
           ) : (
             // B. raiting star
-            <div>
-              <div>
-                <p>{msg.text}</p>
-                <Star key={msg.id} size={22} />
+            <div className="bg-white p-4 rounded-2xl border border-gray-300 shadow-sm max-w-[85%]">
+              <p className="text-sm font-medium mb-3 text-gray-700">
+                {msg.text}
+              </p>
+              <div className="flex gap-1 justfiy-center">
+                {[1, 2, 3, 4, 5].map((s) => (
+                  <Star
+                    key={s}
+                    size={22}
+                    className="text-gray-300 hover:text-yellow-400 cursor-pointer transition"
+                  />
+                ))}
               </div>
-              <button>rate</button>
+              <button className="mt-3 w-full text-xs font-bold text-[#4B0082] py-2 border border-[#4B0082] rounded-lg hover:bg-purple-50 transition cursor-pointer">
+                rate
+              </button>
             </div>
           )}
         </div>

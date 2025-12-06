@@ -7,12 +7,12 @@ import { Message } from "./chat/types";
 const ChatWidget = () => {
   const onClose = () => {};
   const messages: Message[] = [
-    { id: 1, text: "how are you?", sender: "user", type: "text" }, //an example
+    { id: 1, text: "how are you?", sender: "user", type: "rating" }, //an example
     {
       id: 2,
       text: "I am fine, how can I help you?",
       sender: "bot",
-      type: "text",
+      type: "rating",
     }, //an example
   ];
   return (
