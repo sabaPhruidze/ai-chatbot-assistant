@@ -24,7 +24,16 @@ const ChatMessages = ({ messages }: { messages: Message[] }) => {
         >
           {/* A. normal text */}
           {msg.type === "text" ? (
-            <div>{msg.text}</div>
+            <div
+              className={`max-w-[80%] p-3 text-sm shadow-sm 
+                ${
+                  msg.sender === "user"
+                    ? "bg-[#4B0082] text-white rounded-2xl rounded-br-none" // user style
+                    : "bg-white text-gray-800 border border-gray-200 rounded-2xl rounded-bl none"
+                }`}
+            >
+              {msg.text}
+            </div>
           ) : (
             // B. raiting star
             <div>
