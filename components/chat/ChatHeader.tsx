@@ -5,13 +5,10 @@ interface HeaderProps {
 
 const ChatHeader = ({ onClose }: HeaderProps) => {
   return (
-    <div className="bg-mse-purple p-4 flex justify-between items-center shadow-md text-white rounded-t-2xl">
+    <div className="bg-[#4B0082] h-15 px-[15px] flex justify-between items-center shadow-md text-white rounded-t-2xl">
       {/* logo and info */}
       <div className="flex items-center gap-3">
-        <img
-          src="./icon.png"
-          className="w-13 h-13 bg-white rounded-full flex items-center justify-center border-2 border-mse-magenta relative"
-        />
+        <img src="./icon.png" className="w-13 h-13 relative" />
 
         <div>
           <h3 className="font-bold text-sm tracking-wide">MSE ASSISTANT</h3>
@@ -22,7 +19,7 @@ const ChatHeader = ({ onClose }: HeaderProps) => {
       {/* buttons*/}
       <div className="flex gap-2 items-center">
         <button
-          className="bg-mse-green hover:bg-green-600 p-2 rounded-full transition shadow-lg animate-pulse"
+          className="bg-[#00A651] hover:bg-green-600 p-2 rounded-full transition shadow-lg animate-pulse cursor-pointer duration-800"
           title="Voice Call"
         >
           <Phone size={18} />
@@ -30,7 +27,7 @@ const ChatHeader = ({ onClose }: HeaderProps) => {
 
         <button
           onClick={onClose}
-          className="text-gray-300 hover:text-white p-1 transition"
+          className="text-gray-500 hover:text-white p-1 transition cursor-pointer duration-800"
         >
           <X size={24} />
         </button>
