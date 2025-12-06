@@ -14,7 +14,7 @@ const ChatWidget = () => {
       id: 2,
       text: "I am fine, how can I help you?",
       sender: "bot",
-      type: "rating",
+      type: "text",
     }, //an example
   ]);
   //open close chat
@@ -41,11 +41,16 @@ const ChatWidget = () => {
         </div>
       )}
       {/* open/close button */}
+
       <button
         onClick={toggleChat}
-        className="h-16 w-16 rounded-full shadow-2xl flex items-center justify-center transition-transform duration-300 hover:scale-110 border-4 border-white cursor-pointer bg-gray-600 "
+        className="relative h-16 w-16 rounded-full shadow-2xl overflow-hidden border-4 border-white cursor-pointer transition-transform duration-300 hover:scale-110 bg-transparent"
       >
-        <MessageCircle size={32} className="text-white" />
+        <img
+          src="./icon1.png"
+          alt="Main image"
+          className="absolute inset-0 w-full h-full object-contain scale-150"
+        />
       </button>
     </div>
   );
