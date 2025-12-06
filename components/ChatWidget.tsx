@@ -47,7 +47,7 @@ const ChatWidget = () => {
         className="relative h-16 w-16 rounded-full shadow-2xl overflow-hidden border-4 border-white cursor-pointer transition-transform duration-300 hover:scale-110 bg-transparent"
       >
         <img
-          src="./icon1.png"
+          src="./icon.png"
           alt="Main image"
           className="absolute inset-0 w-full h-full object-contain scale-150"
         />
