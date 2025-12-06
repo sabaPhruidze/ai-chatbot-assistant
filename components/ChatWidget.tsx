@@ -31,7 +31,7 @@ const ChatWidget = () => {
   };
 
   return (
-    <div className="fixed bottom-6 z-50 flex flex-col items-end font-sans">
+    <div className="fixed bottom-[30px] right-[30px] z-50 flex flex-col items-end font-sans">
       {/* if isopen  */}
       {isOpen && (
         <div className="w-[360px] h-[550px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden mb-4 border border-gray-200 animate-in fade-in slide-in-from-bottom-10 duration-300">
@@ -45,7 +45,7 @@ const ChatWidget = () => {
         onClick={toggleChat}
         className="h-16 w-16 rounded-full shadow-2xl flex items-center justify-center transition-transform duration-300 hover:scale-110 border-4 border-white cursor-pointer bg-gray-600 "
       >
-        {isOpen && <MessageCircle size={32} className="text-white" />}
+        <MessageCircle size={32} className="text-white" />
       </button>
     </div>
   );
