@@ -8,6 +8,12 @@ const ChatWidget = () => {
   const onClose = () => {};
   const messages: Message[] = [
     { id: 1, text: "how are you?", sender: "user", type: "text" }, //an example
+    {
+      id: 2,
+      text: "I am fine, how can I help you?",
+      sender: "bot",
+      type: "text",
+    }, //an example
   ];
   return (
     <div>
