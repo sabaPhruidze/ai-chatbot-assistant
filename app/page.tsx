@@ -1,7 +1,7 @@
 import ChatWidget from "@/components/ChatWidget";
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen bg-slate-200 flex items-center justify-center">
       <ChatWidget />
     </div>
   );
