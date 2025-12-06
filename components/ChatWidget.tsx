@@ -2,6 +2,7 @@
 import React from "react";
 import ChatHeader from "./chat/ChatHeader";
 import ChatMessages from "./chat/ChatMessages";
+import { ChatInput } from "./chat/ChatInput";
 import { Message } from "./chat/types";
 
 const ChatWidget = () => {
@@ -15,10 +16,12 @@ const ChatWidget = () => {
       type: "rating",
     }, //an example
   ];
+  const onSend = () => {};
   return (
     <div>
       <ChatHeader onClose={onClose} />
       <ChatMessages messages={messages} />
+      <ChatInput onSend={onSend} />
     </div>
   );
 };
